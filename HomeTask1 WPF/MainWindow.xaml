@@ -1,0 +1,75 @@
+﻿<Window x:Class="HomeTask1_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeTask1_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="470" Width="810">
+    <Grid Height="450" Width="800"
+        >
+        <TextBlock
+            FontSize="30"
+            Margin="20,20,0,0"
+            Name="t1"
+            >The color code of the button you clicked -> null</TextBlock>
+        <TextBlock
+            FontSize="23"
+            FontStyle="Italic"
+            Margin="40,380,30,40"
+            Name="t2"
+            >Move the mouse over the button section, right-click and delete the button
+        </TextBlock>
+        <Button
+            FontSize="35"
+            Width="150" Height="100"
+            Margin="0,50,450,190"
+            MouseRightButtonUp="Button_Click1_Right"
+            Click="Button_Click1_Left"
+            Background="DarkBlue"
+        >1</Button>
+        <Button
+            FontSize="35"
+            Width="150" Height="100"
+            Margin="0,50,50,190" 
+            MouseRightButtonUp="Button_Click2_Right"    
+            Click="Button_Click1_Left"
+            Background="Red"
+        >2</Button>
+        <Button
+            FontSize="35"
+            Width="150" Height="100"
+            Margin="520,50,130,190" 
+            MouseRightButtonUp="Button_Click3_Right"
+            Click="Button_Click3_Left"
+            Background="Green"
+        >3</Button>
+
+        <Button
+            FontSize="35"
+            Width="150" Height="100"
+            Margin="0,250,450,90" 
+            MouseRightButtonUp="Button_Click4_Right"
+            Click="Button_Click4_Left"
+            Background="Coral"
+        >4</Button>
+        <Button
+            FontSize="35"
+            Width="150" Height="100"
+            Margin="0,250,50,90" 
+            MouseRightButtonUp="Button_Click5_Right"
+            Click="Button_Click5_Left"
+            Background="Tan"
+        >5</Button>
+        <Button
+            FontSize="35"
+            Width="150" Height="100"
+            Margin="520,250,130,90"  
+            MouseRightButtonUp="Button_Click6_Right"
+            Click="Button_Click6_Left"
+            Background="PaleGoldenrod"
+        >6</Button>
+
+    </Grid>
+</Window>
